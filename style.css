@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #565656;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    border: 5px dotted #fabf29;
+    border-radius: 50%;
+}
+.name{
+    background-color: #fabf29;
+    position: absolute;
+    margin-top: 200px;
+    font-size: 4rem;
+    padding: 10px 50px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.stripe{
+    display: block;
+    height: 30px;
+    width: 100%;
+    top: 225px;
+    background-color: #eeeeee;
+    position: absolute;
+}
+.details{
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px 5px 10px 5px;
+    border-bottom: 1px solid #d2d2d2 ;
+}
+.resume-body{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.body-left .body-right{
+
+    margin-left: 10px;
+}
+.body-left{
+    margin-left: 10px;
+}
+.body-right{
+    margin-left: 10px;
+    border-left: 1px solid #d2d2d2;
+    padding: 10px;
+    margin-top: -15px;
+}
+.card{
+    margin: 20px 0px;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+}
+.card-name{
+    margin-left: 10px;
+    font-size: xx-large;  
+    color: #4e4b4b;
+}
+.icon-wrapper{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px dotted #fabf29;
+}
+.icon-background{
+    width: 50px;
+    height: 50px;
+    background-color: #565656;
+    text-align: center;
+    border-radius: 50%;
+}
+.icon{
+    color: #fabf29;
+    margin-top: 7px;
+}
+.progress-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.progress{
+    accent-color: #fabf29;
+    width: 40%;
+}
+.role{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    list-style-position: inside;
+    padding: 10px;
+}
+.list li{
+    padding: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        height: 280px;
+    }
+    .name{
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    .stripe{
+        height: 20px;
+    }
+    .resume-body{
+        grid-template-columns: auto;
+    }
+    .body-right{
+        border: none;
+        padding: 10px;
+        margin: auto;
+    }
+    
+} 
